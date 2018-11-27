@@ -18,11 +18,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void OnLogin(View view) {
+
+        //startActivity(new Intent(this,HomePage.class)); //used to test home page, need to find a place for it
+
         String username = UsernameEt.getText().toString();
         String password = PasswordEt.getText().toString();
         String type = "login";
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
         backgroundWorker.execute(type, username, password);
+
     }
 
     public void OpenReg(View view){

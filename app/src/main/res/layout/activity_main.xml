@@ -8,21 +8,23 @@
 
     <EditText
         android:id="@+id/etUserName"
-        android:layout_width="wrap_content"
+        android:layout_width="147dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="42dp"
         android:layout_marginTop="107dp"
         android:ems="10"
         android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/etPassword"
-        android:layout_width="wrap_content"
+        android:layout_width="148dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="213dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginTop="198dp"
         android:ems="10"
         android:inputType="textPassword" />
 
@@ -45,4 +47,24 @@
         android:layout_marginBottom="71dp"
         android:text="Register"
         android:onClick="OpenReg"/>
+
+    <EditText
+        android:id="@+id/username_txt"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/etUserName"
+        android:layout_toStartOf="@+id/btnLogin"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Username" />
+
+    <EditText
+        android:id="@+id/password_txt"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/username_txt"
+        android:layout_alignTop="@+id/etPassword"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Password" />
 </RelativeLayout>
