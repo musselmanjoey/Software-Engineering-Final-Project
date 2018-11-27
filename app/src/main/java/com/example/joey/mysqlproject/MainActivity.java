@@ -6,8 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import java.util.concurrent.ExecutionException;
+
 public class MainActivity extends AppCompatActivity {
     EditText UsernameEt, PasswordEt;
+
+    public MainActivity() {
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     }
     public void OnLogin(View view) {
 
-        //startActivity(new Intent(this,HomePage.class)); //used to test home page, need to find a place for it
 
         String username = UsernameEt.getText().toString();
         String password = PasswordEt.getText().toString();
@@ -27,8 +32,21 @@ public class MainActivity extends AppCompatActivity {
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
         backgroundWorker.execute(type, username, password);
 
-    }
+        try {
+            String res = backgroundWorker.get();
+            if (res.equals("login success")) {
+                startActivity(new Intent(this, HomePage.class)); //used to test home page, need to find a place for it
+            }
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
+
+
+
+    }
     public void OpenReg(View view){
         startActivity(new Intent(this,Register.class));
     }
