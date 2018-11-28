@@ -24,8 +24,8 @@
         android:id="@+id/CB12"
         android:layout_width="87dp"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toEndOf="@+id/editText2" />
+        android:layout_alignStart="@+id/CB10"
+        android:layout_below="@+id/CB11" />
 
     <CheckBox
         android:id="@+id/CB1"
@@ -81,7 +81,7 @@
         android:layout_width="87dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true" />
+        android:layout_below="@+id/CB11" />
 
     <CheckBox
         android:id="@+id/CB1_30"
@@ -89,21 +89,28 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/editText4" />
-    
+
 
     <CheckBox
         android:id="@+id/CB2_30"
         android:layout_width="87dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/editText6" />
+        android:layout_alignTop="@+id/CB2" />
+
+    <CheckBox
+        android:id="@+id/CB3_30"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/CH3" />
 
     <CheckBox
         android:id="@+id/CB4_30"
         android:layout_width="87dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText8"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/CB4" />
 
     <CheckBox
         android:id="@+id/CB5_30"
@@ -151,8 +158,7 @@
         android:layout_alignParentStart="true"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:text="5" />
+        android:text="5" />
 
     <EditText
         android:id="@+id/editText8"
@@ -257,6 +263,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/editText11"
         android:layout_alignParentEnd="true"
+        android:layout_marginEnd="23dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="second half" />
@@ -266,7 +273,8 @@
         android:layout_width="82dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/editText11"
-        android:layout_toEndOf="@+id/editText2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="125dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="First half" />
