@@ -9,13 +9,13 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="Set Schedule" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_checkschedule"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="Check Schedule" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_seeother"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="Other Schedules" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"

@@ -23,6 +23,14 @@
         <activity
             android:name=".HomePage"
             android:label="@string/title_activity_home_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CheckSchedule"
+            android:label="@string/title_activity_check_schedule"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SeeOtherSchedules"
+            android:label="@string/title_activity_see_other_schedules"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
