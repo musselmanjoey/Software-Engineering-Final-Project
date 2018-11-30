@@ -31,7 +31,13 @@
         <activity
             android:name=".SeeOtherSchedules"
             android:label="@string/title_activity_see_other_schedules"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TuesdaySet" />
+        <activity android:name=".WednesdaySet" />
+        <activity android:name=".ThursdaySet" />
+        <activity android:name=".FridaySet" />
+        <activity android:name=".SaturdaySet" />
+        <activity android:name=".SundaySet"></activity>
     </application>
 
 </manifest>

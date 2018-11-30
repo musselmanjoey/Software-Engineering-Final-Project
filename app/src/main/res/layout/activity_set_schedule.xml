@@ -204,8 +204,8 @@
         android:id="@+id/editText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/CB2"
         android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="12" />
@@ -232,7 +232,7 @@
 
     <EditText
         android:id="@+id/editText11"
-        android:layout_width="wrap_content"
+        android:layout_width="75dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/editText2"
         android:layout_alignParentStart="true"
