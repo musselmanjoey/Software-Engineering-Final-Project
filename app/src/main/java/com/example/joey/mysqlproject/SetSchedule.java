@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
+import android.widget.Spinner;
 
 
 public class SetSchedule extends AppCompatActivity {
@@ -34,6 +36,12 @@ public class SetSchedule extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set_schedule);
+
+        final Spinner weekdays = findViewById(R.id.weekday_spinner);
+        ArrayAdapter<CharSequence> adaptor = ArrayAdapter.createFromResource
+                (this,R.array.weekdays,R.layout.support_simple_spinner_dropdown_item);
+        weekdays.setAdapter(adaptor);
+
         Bundle mybundle = getIntent().getExtras();
         username = mybundle.getString("Busername");
         string9 = "false";

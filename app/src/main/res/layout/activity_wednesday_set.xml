@@ -6,4 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".WednesdaySet">
 
+
+    <Spinner
+        android:id="@+id/weekday_spinner"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </android.support.constraint.ConstraintLayout>
