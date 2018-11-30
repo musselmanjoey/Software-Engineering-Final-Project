@@ -1,5 +1,6 @@
 package com.example.joey.mysqlproject;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,6 +28,7 @@ public class Register extends AppCompatActivity {
         String type = "register";
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
         backgroundWorker.execute(type, str_name, str_surname, str_age, str_username, str_password);
+        startActivity(new Intent(this,MainActivity.class));
 
     }
 }

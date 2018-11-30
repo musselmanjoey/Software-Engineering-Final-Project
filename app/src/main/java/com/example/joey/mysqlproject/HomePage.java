@@ -18,10 +18,12 @@ import java.util.Set;
 
 public class HomePage extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    String username;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Intent intent = getIntent();
+        Bundle mybundle = getIntent().getExtras();
+        username = mybundle.getString("Busername");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -86,7 +88,12 @@ public class HomePage extends AppCompatActivity
 
         if (id == R.id.nav_setschedule)
         {
-            startActivity(new Intent(this,SetSchedule.class));
+            Intent myintent = new Intent(this,SetSchedule.class);
+            Bundle mybundle = new Bundle();
+
+            mybundle.putString("Busername",username);
+            myintent.putExtras(mybundle);
+            startActivity(myintent);
         }
         else if (id == R.id.nav_gallery) {
 

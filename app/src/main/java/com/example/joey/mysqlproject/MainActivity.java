@@ -35,7 +35,13 @@ public class MainActivity extends AppCompatActivity {
         try {
             String res = backgroundWorker.get();
             if (res.equals("login success")) {
-                startActivity(new Intent(this, HomePage.class)); //used to test home page, need to find a place for it
+                Intent myintent = new Intent(this,HomePage.class);
+                Bundle mybundle = new Bundle();
+
+                mybundle.putString("Busername",username);
+                myintent.putExtras(mybundle);
+                startActivity(myintent);
+
             }
         } catch (ExecutionException e) {
             e.printStackTrace();
