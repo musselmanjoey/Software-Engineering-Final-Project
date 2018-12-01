@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.CheckBox;
 
 import java.util.Set;
 
@@ -46,7 +47,9 @@ public class HomePage extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
+
 
     @Override
     public void onBackPressed() {
@@ -97,7 +100,12 @@ public class HomePage extends AppCompatActivity
         }
         else if (id == R.id.nav_checkschedule)
         {
-            startActivity(new Intent(this,CheckSchedule.class));
+            Intent myintent = new Intent(this,CheckSchedule.class);
+            Bundle mybundle = new Bundle();
+
+            mybundle.putString("Busername",username);
+            myintent.putExtras(mybundle);
+            startActivity(myintent);
         }
         else if (id == R.id.nav_seeother)
         {
