@@ -8,7 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 public class CheckSchedule extends AppCompatActivity {
-
+    String username;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,5 +24,10 @@ public class CheckSchedule extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        Bundle mybundle = getIntent().getExtras();
+        username = mybundle.getString("Busername");
+        String type = "showShed";
+        BackgroundWorker backgroundWorker = new BackgroundWorker(this);
+        backgroundWorker.execute(type, username);
     }
 }
