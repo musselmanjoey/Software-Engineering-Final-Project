@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Register" />
-        <activity android:name=".SetSchedule" />
+        <activity android:name=".SetSchedule"
+            android:label="Monday"/>
         <activity
             android:name=".HomePage"
             android:label="@string/title_activity_home_page"
@@ -28,12 +29,18 @@
             android:name=".SeeOtherSchedules"
             android:label="@string/title_activity_see_other_schedules"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".TuesdaySet" />
-        <activity android:name=".WednesdaySet" />
-        <activity android:name=".ThursdaySet" />
-        <activity android:name=".FridaySet" />
-        <activity android:name=".SaturdaySet" />
-        <activity android:name=".SundaySet" />
+        <activity android:name=".TuesdaySet"
+            android:label="Tuesday"/>
+        <activity android:name=".WednesdaySet"
+            android:label="Wednesday"/>
+        <activity android:name=".ThursdaySet"
+            android:label="Thursday"/>
+        <activity android:name=".FridaySet"
+            android:label="Friday"/>
+        <activity android:name=".SaturdaySet"
+            android:label="Saturday"/>
+        <activity android:name=".SundaySet"
+            android:label="Sunday"/>
         <activity android:name=".CheckSchedule"></activity>
     </application>
 
