@@ -10,15 +10,15 @@
         android:id="@+id/CB10"
         android:layout_width="87dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/editText2"
-        android:layout_toEndOf="@+id/editText2" />
+        android:layout_alignEnd="@+id/editText10"
+        android:layout_alignTop="@+id/CB10_30" />
 
     <CheckBox
         android:id="@+id/CB11"
         android:layout_width="87dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
-        android:layout_toEndOf="@+id/editText2" />
+        android:layout_alignStart="@+id/CB10"
+        android:layout_alignTop="@+id/CB11_30" />
 
     <CheckBox
         android:id="@+id/CB12"
@@ -130,8 +130,8 @@
         android:id="@+id/CB9"
         android:layout_width="87dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editText2"
-        android:layout_toEndOf="@+id/editText2" />
+        android:layout_above="@+id/CB10"
+        android:layout_alignEnd="@+id/editText10" />
 
     <CheckBox
         android:id="@+id/CB11_30"
@@ -172,7 +172,7 @@
 
     <EditText
         android:id="@+id/editText7"
-        android:layout_width="wrap_content"
+        android:layout_width="87dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/editText8"
         android:layout_alignParentStart="true"
@@ -182,7 +182,7 @@
 
     <EditText
         android:id="@+id/editText6"
-        android:layout_width="wrap_content"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/editText7"
         android:layout_alignParentStart="true"
@@ -192,7 +192,7 @@
 
     <EditText
         android:id="@+id/editText5"
-        android:layout_width="wrap_content"
+        android:layout_width="91dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/editText6"
         android:layout_alignParentStart="true"
@@ -202,7 +202,7 @@
 
     <EditText
         android:id="@+id/editText4"
-        android:layout_width="wrap_content"
+        android:layout_width="91dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/CB2"
         android:layout_alignParentStart="true"
@@ -212,7 +212,7 @@
 
     <EditText
         android:id="@+id/editText3"
-        android:layout_width="wrap_content"
+        android:layout_width="91dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/editText4"
         android:layout_alignParentStart="true"
@@ -222,7 +222,7 @@
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="wrap_content"
+        android:layout_width="94dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/editText3"
         android:layout_alignParentStart="true"
@@ -232,7 +232,7 @@
 
     <EditText
         android:id="@+id/editText11"
-        android:layout_width="75dp"
+        android:layout_width="92dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/editText2"
         android:layout_alignParentStart="true"
@@ -240,22 +240,12 @@
         android:inputType="textPersonName"
         android:text="9" />
 
-    <EditText
-        android:id="@+id/editText12"
-        android:layout_width="314dp"
-        android:layout_height="77dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="check boxes that you are avalible for" />
-
     <CheckBox
         android:id="@+id/CB9_30"
         android:layout_width="83dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editText2"
-        android:layout_alignParentEnd="true" />
+        android:layout_above="@+id/CB10"
+        android:layout_alignStart="@+id/editText13" />
 
     <EditText
         android:id="@+id/editText13"
@@ -292,8 +282,17 @@
         android:id="@+id/weekday_spinner"
         android:layout_width="211dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/mon_go_btn"
+        android:layout_width="86dp"
+        android:layout_height="38dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_toEndOf="@+id/CB10"
+        android:onClick="Go"
+        android:text="Go" />
 
 
 </RelativeLayout>
