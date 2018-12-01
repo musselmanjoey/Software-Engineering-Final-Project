@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import java.util.concurrent.ExecutionException;
+
 public class Register extends AppCompatActivity {
     EditText name, surname, age, username, password;
     @Override
@@ -28,7 +30,17 @@ public class Register extends AppCompatActivity {
         String type = "register";
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
         backgroundWorker.execute(type, str_name, str_surname, str_age, str_username, str_password);
-        startActivity(new Intent(this,MainActivity.class));
+        try {
+            String res = backgroundWorker.get();
+            if (res.equals("new row created")) {
+                startActivity(new Intent(this,MainActivity.class));
+
+            }
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
     }
 }
