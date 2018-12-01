@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Spinner;
 
@@ -37,11 +38,6 @@ public class SetSchedule extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set_schedule);
 
-        final Spinner weekdays = findViewById(R.id.weekday_spinner);
-        ArrayAdapter<CharSequence> adaptor = ArrayAdapter.createFromResource
-                (this,R.array.weekdays,R.layout.support_simple_spinner_dropdown_item);
-        weekdays.setAdapter(adaptor);
-
         Bundle mybundle = getIntent().getExtras();
         username = mybundle.getString("Busername");
         string9 = "false";
@@ -64,6 +60,21 @@ public class SetSchedule extends AppCompatActivity {
         string5_30 = "false";
         string6 = "false";
         string6_30 = "false";
+
+        final Spinner weekdays = findViewById(R.id.weekday_spinner);
+        ArrayAdapter<CharSequence> adaptor = ArrayAdapter.createFromResource
+                (this,R.array.weekdays,R.layout.support_simple_spinner_dropdown_item);
+        weekdays.setAdapter(adaptor);
+    }
+
+    public void Go(View view)
+    {
+        final Spinner weekdays = findViewById(R.id.weekday_spinner);
+
+        if(weekdays.getSelectedItemPosition()==1)
+        {
+            startActivity(new Intent(this,TuesdaySet.class));
+        }
     }
 
     public void SubmitShed(View view) {
@@ -212,7 +223,6 @@ public class SetSchedule extends AppCompatActivity {
 
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
         backgroundWorker.execute(type, string9, string9_30, string10, string10_30, string11, string11_30, string12, string12_30, string1, string1_30, string2, string2_30, string3, string3_30, string4, string4_30, string5, string5_30, string6, string6_30, username);
-
     }
 
 }
