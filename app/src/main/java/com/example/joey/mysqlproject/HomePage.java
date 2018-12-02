@@ -39,6 +39,7 @@ public class HomePage extends AppCompatActivity
             }
         });
 
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -109,7 +110,12 @@ public class HomePage extends AppCompatActivity
         }
         else if (id == R.id.nav_seeother)
         {
-            startActivity(new Intent(this,SeeOtherSchedules.class));
+            Intent myintent = new Intent(this,SeeOtherSchedules.class);
+            Bundle mybundle = new Bundle();
+
+            mybundle.putString("Busername",username);
+            myintent.putExtras(mybundle);
+            startActivity(myintent);
         }
         else if (id == R.id.nav_send)
         {

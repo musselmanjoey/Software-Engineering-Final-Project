@@ -19,29 +19,35 @@
             </intent-filter>
         </activity>
         <activity android:name=".Register" />
-        <activity android:name=".SetSchedule"
-            android:label="Monday"/>
+        <activity
+            android:name=".SetSchedule"
+            android:label="Monday" />
         <activity
             android:name=".HomePage"
             android:label="Simple Schedules"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SeeOtherSchedules"
-            android:label="Other Schedules"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".TuesdaySet"
-            android:label="Tuesday"/>
-        <activity android:name=".WednesdaySet"
-            android:label="Wednesday"/>
-        <activity android:name=".ThursdaySet"
-            android:label="Thursday"/>
-        <activity android:name=".FridaySet"
-            android:label="Friday"/>
-        <activity android:name=".SaturdaySet"
-            android:label="Saturday"/>
-        <activity android:name=".SundaySet"
-            android:label="Sunday"/>
-        <activity android:name=".CheckSchedule"></activity>
+            android:name=".TuesdaySet"
+            android:label="Tuesday" />
+        <activity
+            android:name=".WednesdaySet"
+            android:label="Wednesday" />
+        <activity
+            android:name=".ThursdaySet"
+            android:label="Thursday" />
+        <activity
+            android:name=".FridaySet"
+            android:label="Friday" />
+        <activity
+            android:name=".SaturdaySet"
+            android:label="Saturday" />
+        <activity
+            android:name=".SundaySet"
+            android:label="Sunday" />
+        <activity
+            android:name=".CheckSchedule"
+            android:label="Check your Schedule" />
+        <activity android:name=".SeeOtherSchedules"></activity>
     </application>
 
 </manifest>
