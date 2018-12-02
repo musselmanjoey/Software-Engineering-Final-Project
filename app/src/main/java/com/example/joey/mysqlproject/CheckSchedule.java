@@ -19,6 +19,10 @@ public class CheckSchedule extends AppCompatActivity {
         String type = "showShed";
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
         backgroundWorker.execute(type, username);
+        String[] myStringArray = new String[140];
+        for(int i = 0; i < 140; i++){
+            myStringArray[i] = "0";
+        }
         try {
             String res = backgroundWorker.get();
             /*StringTokenizer defaultTokenizer = new StringTokenizer(res);
