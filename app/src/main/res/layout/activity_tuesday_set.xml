@@ -1,11 +1,282 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TuesdaySet">
 
+    <CheckBox
+        android:id="@+id/CB10"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText10"
+        android:layout_alignTop="@+id/CB10_30" />
+
+    <CheckBox
+        android:id="@+id/CB11"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/CB10"
+        android:layout_alignTop="@+id/CB11_30" />
+
+    <CheckBox
+        android:id="@+id/CB12"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/CB10"
+        android:layout_below="@+id/CB11" />
+
+    <CheckBox
+        android:id="@+id/CB1"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:layout_toEndOf="@+id/editText2" />
+
+    <CheckBox
+        android:id="@+id/CB2"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText5"
+        android:layout_toEndOf="@+id/editText2" />
+
+    <CheckBox
+        android:id="@+id/CB3"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText6"
+        android:layout_toEndOf="@+id/editText2" />
+
+    <CheckBox
+        android:id="@+id/CB4"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText7"
+        android:layout_toEndOf="@+id/editText2" />
+
+    <CheckBox
+        android:id="@+id/CB5"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText9"
+        android:layout_toEndOf="@+id/editText2" />
+
+    <CheckBox
+        android:id="@+id/CB6"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/editText2" />
+
+    <CheckBox
+        android:id="@+id/CB10_30"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editText2" />
+
+    <CheckBox
+        android:id="@+id/CB12_30"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/CB11" />
+
+    <CheckBox
+        android:id="@+id/CB1_30"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText4" />
+
+
+    <CheckBox
+        android:id="@+id/CB2_30"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/CB2" />
+
+    <CheckBox
+        android:id="@+id/CB3_30"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/CB3" />
+
+    <CheckBox
+        android:id="@+id/CB4_30"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/CB4" />
+
+    <CheckBox
+        android:id="@+id/CB5_30"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText8" />
+
+    <CheckBox
+        android:id="@+id/CB6_30"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:id="@+id/CB9"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CB10"
+        android:layout_alignEnd="@+id/editText10" />
+
+    <CheckBox
+        android:id="@+id/CB11_30"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="6" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText10"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="5" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText9"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="4" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText8"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="3" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText7"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="2" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText6"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="1" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CB2"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="12" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText4"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="11" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText3"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="10" />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText2"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="9" />
+
+    <CheckBox
+        android:id="@+id/CB9_30"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CB10"
+        android:layout_alignStart="@+id/editText13" />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText11"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="23dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="second half" />
+
+    <EditText
+        android:id="@+id/editText14"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText11"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="125dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="First half" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText11"
+        android:layout_alignParentStart="true"
+        android:text="Submit"
+        android:onClick="SubmitShed"/>
 
     <Spinner
         android:id="@+id/weekday_spinner"
@@ -21,8 +292,7 @@
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/CB10"
         android:onClick="Go"
-        android:text="Go"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:text="Go" />
 
-</android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>
