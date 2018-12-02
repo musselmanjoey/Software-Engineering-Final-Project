@@ -286,6 +286,15 @@
         android:layout_toEndOf="@+id/weekday_spinner"
         android:text="6" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView10"
+        android:onClick="Home"
+        android:text="Home" />
+
 
 
 </RelativeLayout>

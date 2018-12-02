@@ -69,6 +69,16 @@ public class SetSchedule extends AppCompatActivity {
         weekdays.setAdapter(adaptor);
     }
 
+    public void Home(View view)
+    {
+        Intent myintent = new Intent(this,HomePage.class);
+        Bundle mybundle = new Bundle();
+
+        mybundle.putString("Busername",username);
+        myintent.putExtras(mybundle);
+        startActivity(myintent);
+    }
+
     public void Go(View view)
     {
         final Spinner weekdays = findViewById(R.id.weekday_spinner);
