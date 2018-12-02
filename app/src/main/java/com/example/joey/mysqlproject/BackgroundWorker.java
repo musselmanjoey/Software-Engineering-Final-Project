@@ -32,6 +32,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
         String register_url = "http://ww2.cs.fsu.edu/~musselma/register.php";
         String updateShed_url = "http://ww2.cs.fsu.edu/~musselma/updateShed.php";
         String showShed_url = "http://ww2.cs.fsu.edu/~musselma/showShed.php";
+        String getUsers_url = "http://ww2.cs.fsu.edu/~musselma/getUsers.php";
         if(type.equals("login")){
             try {
                 String user_name = params[1];
@@ -184,6 +185,38 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
             try {
                 String username = params[1];
                 URL url = new URL(showShed_url);
+                HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                httpURLConnection.setDoInput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+                String post_data = URLEncoder.encode("username","UTF-8")+"="+URLEncoder.encode(username,"UTF-8");
+                bufferedWriter.write(post_data);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
+                String result="";
+                String line="";
+                while((line = bufferedReader.readLine())!= null){
+                    result += line;
+                }
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+                return result;
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        else if(type.equals("getUsers")){
+            try {
+                String username = params[1];
+                URL url = new URL(getUsers_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
