@@ -33,6 +33,7 @@ public class SetSchedule extends AppCompatActivity {
     String string6;
     String string6_30;
     String username;
+    String day;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +41,7 @@ public class SetSchedule extends AppCompatActivity {
 
         Bundle mybundle = getIntent().getExtras();
         username = mybundle.getString("Busername");
+        day = "Monday";
         string9 = "false";
         string9_30 = "false";
         string10 = "false";
@@ -246,7 +248,7 @@ public class SetSchedule extends AppCompatActivity {
         }
 
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
-        backgroundWorker.execute(type, string9, string9_30, string10, string10_30, string11, string11_30, string12, string12_30, string1, string1_30, string2, string2_30, string3, string3_30, string4, string4_30, string5, string5_30, string6, string6_30, username);
+        backgroundWorker.execute(type, string9, string9_30, string10, string10_30, string11, string11_30, string12, string12_30, string1, string1_30, string2, string2_30, string3, string3_30, string4, string4_30, string5, string5_30, string6, string6_30, username, day);
     }
 
 }
