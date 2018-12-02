@@ -129,7 +129,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
                 String string6 = params[19];
                 String string6_30 = params[20];
                 String username = params[21];
-
+                String day = params[22];
                 URL url = new URL(updateShed_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
@@ -157,7 +157,8 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
                         +URLEncoder.encode("string5_30","UTF-8")+"="+URLEncoder.encode(string5_30,"UTF-8")+"&"
                         +URLEncoder.encode("string6","UTF-8")+"="+URLEncoder.encode(string6,"UTF-8")+"&"
                         +URLEncoder.encode("string6_30","UTF-8")+"="+URLEncoder.encode(string6_30,"UTF-8")+"&"
-                        +URLEncoder.encode("username","UTF-8")+"="+URLEncoder.encode(username,"UTF-8");
+                        +URLEncoder.encode("username","UTF-8")+"="+URLEncoder.encode(username,"UTF-8")+"&"
+                        +URLEncoder.encode("day","UTF-8")+"="+URLEncoder.encode(day,"UTF-8");
                 bufferedWriter.write(post_data);
                 bufferedWriter.flush();
                 bufferedWriter.close();
