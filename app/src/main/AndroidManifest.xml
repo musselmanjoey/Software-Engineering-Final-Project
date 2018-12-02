@@ -47,7 +47,8 @@
         <activity
             android:name=".CheckSchedule"
             android:label="Check your Schedule" />
-        <activity android:name=".SeeOtherSchedules"></activity>
+        <activity android:name=".SeeOtherSchedules" />
+        <activity android:name=".Messages"></activity>
     </application>
 
 </manifest>

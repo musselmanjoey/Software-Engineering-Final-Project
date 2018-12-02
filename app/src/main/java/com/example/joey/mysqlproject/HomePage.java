@@ -119,7 +119,12 @@ public class HomePage extends AppCompatActivity
         }
         else if (id == R.id.nav_send)
         {
+            Intent myintent = new Intent(this,Messages.class);
+            Bundle mybundle = new Bundle();
 
+            mybundle.putString("Busername",username);
+            myintent.putExtras(mybundle);
+            startActivity(myintent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

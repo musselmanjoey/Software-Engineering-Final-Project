@@ -51,17 +51,16 @@
     <TextView
         android:id="@+id/textView15"
         android:layout_width="103dp"
-        android:layout_height="37dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/etUserName"
-        android:layout_marginStart="33dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etUserName"
+        android:layout_toStartOf="@+id/btnLogin"
         android:text="Username" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="104dp"
-        android:layout_height="49dp"
-        android:layout_alignTop="@+id/etPassword"
+        android:layout_height="28dp"
+        android:layout_alignBaseline="@+id/etPassword"
         android:layout_toStartOf="@+id/btnLogin"
         android:text="Password" />
 
