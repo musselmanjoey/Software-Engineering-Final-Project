@@ -76,31 +76,66 @@ public class TuesdaySet extends AppCompatActivity {
 
         if(weekdays.getSelectedItemPosition()==0)
         {
-            startActivity(new Intent(this,SetSchedule.class));
+            Intent myintent = new Intent(this,SetSchedule.class);
+            Bundle mybundle = new Bundle();
+
+            mybundle.putString("Busername",username);
+            myintent.putExtras(mybundle);
+            startActivity(myintent);
         }
         else if(weekdays.getSelectedItemPosition()==1)
         {
-            startActivity(new Intent(this,TuesdaySet.class));
+            Intent myintent = new Intent(this,TuesdaySet.class);
+            Bundle mybundle = new Bundle();
+
+            mybundle.putString("Busername",username);
+            myintent.putExtras(mybundle);
+            startActivity(myintent);
         }
         else if(weekdays.getSelectedItemPosition()==2)
         {
-            startActivity(new Intent(this,WednesdaySet.class));
+            Intent myintent = new Intent(this,WednesdaySet.class);
+            Bundle mybundle = new Bundle();
+
+            mybundle.putString("Busername",username);
+            myintent.putExtras(mybundle);
+            startActivity(myintent);
         }
         else if(weekdays.getSelectedItemPosition()==3)
         {
-            startActivity(new Intent(this,ThursdaySet.class));
+            Intent myintent = new Intent(this,ThursdaySet.class);
+            Bundle mybundle = new Bundle();
+
+            mybundle.putString("Busername",username);
+            myintent.putExtras(mybundle);
+            startActivity(myintent);
         }
         else if(weekdays.getSelectedItemPosition()==4)
         {
-            startActivity(new Intent(this,FridaySet.class));
+            Intent myintent = new Intent(this,FridaySet.class);
+            Bundle mybundle = new Bundle();
+
+            mybundle.putString("Busername",username);
+            myintent.putExtras(mybundle);
+            startActivity(myintent);
         }
         else if(weekdays.getSelectedItemPosition()==5)
         {
-            startActivity(new Intent(this,SaturdaySet.class));
+            Intent myintent = new Intent(this,SaturdaySet.class);
+            Bundle mybundle = new Bundle();
+
+            mybundle.putString("Busername",username);
+            myintent.putExtras(mybundle);
+            startActivity(myintent);
         }
         else if(weekdays.getSelectedItemPosition()==6)
         {
-            startActivity(new Intent(this,SundaySet.class));
+            Intent myintent = new Intent(this,SundaySet.class);
+            Bundle mybundle = new Bundle();
+
+            mybundle.putString("Busername",username);
+            myintent.putExtras(mybundle);
+            startActivity(myintent);
         }
     }
 
@@ -253,6 +288,7 @@ public class TuesdaySet extends AppCompatActivity {
     }
 
 }
+
 /*    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
