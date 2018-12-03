@@ -29,6 +29,9 @@ public class CheckSchedule extends AppCompatActivity {
             String[] myStringArray = res.split(" ");
             int x = 0;
 
+
+            //MONDAY
+
             if (myStringArray[x].equals("1"))
             {
                     ImageView imgStatus = findViewById(R.id.box_mon_9);
@@ -218,8 +221,7 @@ public class CheckSchedule extends AppCompatActivity {
 
             }
             x++;
-            if (myStringArray[x].equals("1"))
-            {
+            if (myStringArray[x].equals("1")) {
                 ImageView imgStatus = findViewById(R.id.box_mon_630);
                 Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
                 int iconColor = android.graphics.Color.GREEN;
@@ -227,7 +229,206 @@ public class CheckSchedule extends AppCompatActivity {
                 imgStatus.setImageDrawable(d);
 
             }
+
+            //TUESDAY
+
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_9);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+            }
             x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_930);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_10);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_1030);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_11);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_1130);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_12);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_1230);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_1);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_130);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_2);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_230);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_3);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_330);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_4);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_430);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_5);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_530);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_tues_6);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
+            x++;
+            if (myStringArray[x].equals("1")) {
+                ImageView imgStatus = findViewById(R.id.box_tues_630);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
+            }
 
 
         } catch (ExecutionException e) {

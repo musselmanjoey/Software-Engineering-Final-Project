@@ -168,6 +168,16 @@
         android:layout_below="@+id/textView28"
         android:text="9:30" />
 
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="12dp"
+        android:text="Mon" />
+
     <ImageView
         android:id="@+id/box_mon_9"
         android:layout_width="14dp"
@@ -232,16 +242,6 @@
         android:layout_alignStart="@+id/box_mon_9"
         android:layout_alignTop="@+id/textView41"
         app:srcCompat="?attr/colorError" />
-
-    <TextView
-        android:id="@+id/textView48"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="78dp"
-        android:layout_marginTop="12dp"
-        android:text="Mon" />
 
     <ImageView
         android:id="@+id/box_mon_1"
@@ -400,4 +400,165 @@
         android:layout_alignTop="@+id/textView48"
         android:layout_marginEnd="30dp"
         android:text="Sun" />
+
+    <ImageView
+        android:id="@+id/box_tues_9"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView28"
+        android:layout_marginStart="124dp"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_930"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_below="@+id/textView28"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_10"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_alignTop="@+id/textView46"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_1030"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_alignTop="@+id/textView45"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_11"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_alignTop="@+id/textView43"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_1130"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_below="@+id/textView43"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_12"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_alignTop="@+id/textView42"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_1230"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_alignTop="@+id/textView41"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_1"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_alignTop="@+id/textView40"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_130"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_alignTop="@+id/textView39"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_2"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_alignTop="@+id/textView38"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_230"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_centerVertical="true"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_3"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_alignTop="@+id/textView36"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_330"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_alignTop="@+id/textView35"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_4"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_alignTop="@+id/textView34"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_430"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_alignTop="@+id/textView33"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_5"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_alignTop="@+id/textView32"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_530"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_alignTop="@+id/textView31"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_6"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_alignTop="@+id/textView30"
+        app:srcCompat="?attr/colorError" />
+
+    <ImageView
+        android:id="@+id/box_tues_630"
+        android:layout_width="14dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/box_tues_9"
+        android:layout_alignTop="@+id/textView29"
+        app:srcCompat="?attr/colorError" />
 </RelativeLayout>
