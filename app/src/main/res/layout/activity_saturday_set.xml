@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SetSchedule">
-
     <CheckBox
         android:id="@+id/CB10"
         android:layout_width="wrap_content"
@@ -18,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/CB12"
-        android:layout_alignStart="@+id/CB9" />
+        android:layout_alignStart="@+id/CB1" />
 
     <CheckBox
         android:id="@+id/CB12"
@@ -31,7 +30,7 @@
         android:id="@+id/CB1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/CB10"
+        android:layout_alignStart="@+id/mon_go_btn"
         android:layout_centerVertical="true" />
 
     <CheckBox
@@ -137,8 +136,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/CB10"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="73dp" />
+        android:layout_alignStart="@+id/CB10" />
 
     <CheckBox
         android:id="@+id/CB11_30"
@@ -159,8 +157,9 @@
         android:id="@+id/submitBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/weekday_spinner"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/CB10"
+        android:layout_marginTop="50dp"
         android:onClick="SubmitShed"
         android:text="Submit" />
 
@@ -184,10 +183,10 @@
         android:id="@+id/textView2"
         android:layout_width="140dp"
         android:layout_height="88dp"
+        android:layout_above="@+id/CB10"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/CB9"
-        android:layout_marginStart="22dp"
-        android:text="Click boxes for when you are available, leave unmarked if you are available" />
+        android:layout_marginStart="19dp"
+        android:text="Click boxes for when you are available, leave unmarked if you are unavailable" />
 
     <TextView
         android:id="@+id/textView3"
@@ -198,28 +197,11 @@
         android:text="9" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="43dp"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/CB10"
-        android:layout_alignTop="@+id/textView5"
-        android:text="First Half" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="61dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="60dp"
-        android:text="Second Half" />
-
-    <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/CB10"
-        android:layout_toStartOf="@+id/mon_go_btn"
+        android:layout_toEndOf="@+id/weekday_spinner"
         android:text="10" />
 
     <TextView
@@ -227,7 +209,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/CB10"
-        android:layout_toStartOf="@+id/mon_go_btn"
+        android:layout_toEndOf="@+id/weekday_spinner"
         android:text="11" />
 
     <TextView
@@ -235,7 +217,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/CB11"
-        android:layout_toStartOf="@+id/mon_go_btn"
+        android:layout_toEndOf="@+id/weekday_spinner"
         android:text="12" />
 
     <TextView
@@ -243,7 +225,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_toStartOf="@+id/mon_go_btn"
+        android:layout_toEndOf="@+id/weekday_spinner"
         android:text="1" />
 
     <TextView
@@ -267,7 +249,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/CB4"
-        android:layout_toStartOf="@+id/mon_go_btn"
+        android:layout_toEndOf="@+id/weekday_spinner"
         android:text="4" />
 
     <TextView
@@ -290,11 +272,91 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/CB11"
         android:layout_alignStart="@+id/textView2"
-        android:layout_below="@+id/textView10"
         android:onClick="Home"
         android:text="Home" />
 
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/CB9"
+        android:layout_marginEnd="68dp"
+        android:text="9:30" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_alignTop="@+id/CB10"
+        android:text="10:30" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_below="@+id/CB10"
+        android:text="11:30" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_below="@+id/CB11"
+        android:text="12:30" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_centerVertical="true"
+        android:text="1:30" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_alignTop="@+id/CB2"
+        android:text="2:30" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_alignTop="@+id/CB3"
+        android:text="3:30" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_alignTop="@+id/CB4"
+        android:text="4:30" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_alignTop="@+id/CB5"
+        android:text="5:30" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_alignTop="@+id/CB6"
+        android:text="6:30" />
 
 
 
