@@ -6,20 +6,4 @@
     android:layout_height="match_parent"
     tools:context=".SeeOtherSchedules">
 
-    <ImageView
-        android:id="@+id/view_2"
-        android:layout_width="96dp"
-        android:layout_height="68dp"
-        app:srcCompat="?attr/colorPrimary"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="54dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="Change"
-        android:text="Button"
-        tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="195dp" />
 </android.support.constraint.ConstraintLayout>

@@ -1,8 +1,12 @@
 package com.example.joey.mysqlproject;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
+import android.graphics.drawable.Drawable;
+import android.graphics.PorterDuff.Mode;
 
 import java.util.StringTokenizer;
 import java.util.concurrent.ExecutionException;
@@ -23,113 +27,209 @@ public class CheckSchedule extends AppCompatActivity {
         try {
             String res = backgroundWorker.get();
             String[] myStringArray = res.split(" ");
-            if(myStringArray[0].equals("1")){
-                //make block green
+            int x = 0;
+
+            if (myStringArray[x].equals("1"))
+            {
+                    ImageView imgStatus = findViewById(R.id.box_mon_9);
+                    Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                    int iconColor = android.graphics.Color.GREEN;
+                    d.setColorFilter(iconColor, Mode.MULTIPLY);
+                    imgStatus.setImageDrawable(d);
             }
-            else{
-                //make block red
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_930);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            if(myStringArray[1].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_10);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[2].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_1030);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[3].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_11);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[4].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_1130);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[5].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_12);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[6].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_1230);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[7].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_1);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[8].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_130);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[9].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_2);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[10].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_230);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[11].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_3);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[12].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_330);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[13].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_4);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[14].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_430);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[15].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_5);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[16].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_530);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[17].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_6);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[18].equals("1")){
-                //make block green
+            x++;
+            if (myStringArray[x].equals("1"))
+            {
+                ImageView imgStatus = findViewById(R.id.box_mon_630);
+                Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
+                int iconColor = android.graphics.Color.GREEN;
+                d.setColorFilter(iconColor, Mode.MULTIPLY);
+                imgStatus.setImageDrawable(d);
+
             }
-            else{
-                //make block red
-            }if(myStringArray[19].equals("1")){
-                //make block green
-            }
-            else{
-                //make block red
-            }if(myStringArray[20].equals("1")){
-                //make block green
-            }
-            else{
-                //make block red
-            }
+            x++;
+
+
         } catch (ExecutionException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
