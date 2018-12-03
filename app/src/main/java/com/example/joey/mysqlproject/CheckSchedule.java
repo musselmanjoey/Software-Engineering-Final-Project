@@ -19,13 +19,117 @@ public class CheckSchedule extends AppCompatActivity {
         String type = "showShed";
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
         backgroundWorker.execute(type, username);
-        String[] myTestArray = new String[140];
-        for(int i = 0; i < 140; i++){
-            myTestArray[i] = "0";
-        }
+
         try {
             String res = backgroundWorker.get();
             String[] myStringArray = res.split(" ");
+            if(myStringArray[0].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }
+            if(myStringArray[1].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[2].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[3].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[4].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[5].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[6].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[7].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[8].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[9].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[10].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[11].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[12].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[13].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[14].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[15].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[16].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[17].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[18].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[19].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }if(myStringArray[20].equals("1")){
+                //make block green
+            }
+            else{
+                //make block red
+            }
         } catch (ExecutionException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {

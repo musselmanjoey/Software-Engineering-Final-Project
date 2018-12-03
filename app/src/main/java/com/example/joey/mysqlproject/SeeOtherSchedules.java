@@ -28,5 +28,6 @@ public class SeeOtherSchedules extends AppCompatActivity {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
     }
 }
