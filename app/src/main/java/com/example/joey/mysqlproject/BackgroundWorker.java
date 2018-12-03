@@ -22,12 +22,13 @@ import java.net.URLEncoder;
 public class BackgroundWorker extends AsyncTask<String,Void,String> {
     Context context;
     AlertDialog alertDialog;
+    String type;
     BackgroundWorker (Context ctx) {
         context = ctx;
     }
     @Override
     protected String doInBackground(String... params){
-        String type = params[0];
+        type = params[0];
         String login_url = "http://ww2.cs.fsu.edu/~musselma/login.php";
         String register_url = "http://ww2.cs.fsu.edu/~musselma/register.php";
         String updateShed_url = "http://ww2.cs.fsu.edu/~musselma/updateShed.php";
@@ -250,14 +251,18 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 
     @Override
     protected void onPreExecute(){
-        alertDialog = new AlertDialog.Builder(context).create();
-        alertDialog.setTitle("Login Status");
+            alertDialog = new AlertDialog.Builder(context).create();
+            alertDialog.setTitle("Login Status");
+
     }
 
     @Override
     protected void onPostExecute(String result){
-        alertDialog.setMessage(result);
-        alertDialog.show();
+            if(result.equals("login success") ||result.equals("login not success")||
+                    result.equals("Username is already in use please choose another")||result.equals("new row created")) {
+                alertDialog.setMessage(result);
+                alertDialog.show();
+            }
     }
 
     @Override
