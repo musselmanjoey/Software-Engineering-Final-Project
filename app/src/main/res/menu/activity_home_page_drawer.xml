@@ -6,15 +6,12 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_setschedule"
-            android:icon="@drawable/ic_menu_camera"
             android:title="Set Schedule" />
         <item
             android:id="@+id/nav_checkschedule"
-            android:icon="@drawable/ic_menu_gallery"
             android:title="Check Schedule" />
         <item
             android:id="@+id/nav_seeother"
-            android:icon="@drawable/ic_menu_slideshow"
             android:title="Other Schedules" />
     </group>
 
@@ -22,7 +19,6 @@
         <menu>
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
                 android:title="Messages" />
         </menu>
     </item>

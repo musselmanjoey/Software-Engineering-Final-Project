@@ -110,8 +110,4 @@
         <item>Sunday</item>
     </string-array>
 
-    <string-array name = "usernames">
-
-    </string-array>
-
 </resources>
