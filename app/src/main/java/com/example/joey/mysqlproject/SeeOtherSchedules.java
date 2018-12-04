@@ -47,11 +47,11 @@ public class SeeOtherSchedules extends AppCompatActivity {
     }
     public void Go(View view)
     {
-        //username = other_spinner.getSelectedItem().toString();
-        //Intent myintent = new Intent(this,CheckSchedule.class);
-        //Bundle mybundle = new Bundle();
-        //mybundle.putString("Busername",username);
-        //myintent.putExtras(mybundle);
-        //startActivity(myintent);
+        username = other_spinner.getSelectedItem().toString();
+        Intent myintent = new Intent(this,CheckSchedule.class);
+        Bundle mybundle = new Bundle();
+        mybundle.putString("Busername",username);
+        myintent.putExtras(mybundle);
+        startActivity(myintent);
     }
 }
