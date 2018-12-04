@@ -12,30 +12,45 @@
         android:id="@+id/username_textbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/name_textbox"
-        android:layout_below="@+id/age_textbox" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="195dp"
+        android:layout_marginStart="37dp"
+        android:text="Username: " />
 
     <TextView
         android:id="@+id/name_textbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/lastname_textbox"
-        android:layout_marginStart="88dp" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:text="Welcome " />
 
     <TextView
         android:id="@+id/lastname_textbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="46dp" />
+        android:layout_alignStart="@+id/username_textbox"
+        android:layout_below="@+id/username_textbox"
+        android:layout_marginTop="-176dp"
+        android:text="Lastname: " />
 
     <TextView
         android:id="@+id/age_textbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/username_textbox"
+        android:layout_marginBottom="127dp"
+        android:text="Age: " />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="99dp" />
+        android:layout_marginTop="135dp"
+        android:layout_toEndOf="@+id/age_textbox"
+        android:text="This is Simple Schdules, the simplest way to meet with friends" />
 </RelativeLayout>

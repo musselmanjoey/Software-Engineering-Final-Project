@@ -46,8 +46,10 @@
             android:label="Sunday" />
         <activity
             android:name=".CheckSchedule"
-            android:label="Check your Schedule" />
-        <activity android:name=".SeeOtherSchedules" />
+            android:label="Check Schedules" />
+        <activity android:name=".SeeOtherSchedules"
+            android:label = "Check Other Schdeules"/>
+
         <activity android:name=".Messages"></activity>
     </application>
 

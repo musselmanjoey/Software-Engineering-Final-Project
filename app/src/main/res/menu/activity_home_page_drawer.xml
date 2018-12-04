@@ -15,12 +15,4 @@
             android:title="Other Schedules" />
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_send"
-                android:title="Messages" />
-        </menu>
-    </item>
-
 </menu>
