@@ -1362,6 +1362,6 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/btn_other_schd"
         android:layout_toEndOf="@+id/textView49"
-        android:text="Insert username for schdule" />
+        android:text="" />
 
 </RelativeLayout>

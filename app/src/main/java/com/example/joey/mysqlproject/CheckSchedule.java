@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.graphics.drawable.Drawable;
 import android.graphics.PorterDuff.Mode;
+import android.widget.TextView;
 
 import java.util.StringTokenizer;
 import java.util.concurrent.ExecutionException;
@@ -1428,6 +1429,9 @@ public class CheckSchedule extends AppCompatActivity {
                 d.setColorFilter(iconColor, Mode.MULTIPLY);
                 imgStatus.setImageDrawable(d);
             }
+            final TextView nametext = findViewById(R.id.username_for_schd);
+            nametext.append(username);
+
 
         } catch (ExecutionException e) {
             e.printStackTrace();
