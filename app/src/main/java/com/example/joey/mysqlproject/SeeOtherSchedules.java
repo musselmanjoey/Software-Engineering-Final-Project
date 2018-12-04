@@ -14,6 +14,7 @@ import java.util.concurrent.ExecutionException;
 
 public class SeeOtherSchedules extends AppCompatActivity {
     String username;
+    Spinner other_spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,11 +33,10 @@ public class SeeOtherSchedules extends AppCompatActivity {
 
             final List<String> other_list = new ArrayList<>(Arrays.asList(myStringArray));
 
-            final Spinner other_spinner = findViewById(R.id.other_user_spinner);
+            other_spinner = findViewById(R.id.other_user_spinner);
             final ArrayAdapter<String> adaptor = new ArrayAdapter<>
                     (this, R.layout.support_simple_spinner_dropdown_item,other_list);
             other_spinner.setAdapter(adaptor);
-
 
         } catch (ExecutionException e) {
             e.printStackTrace();
@@ -47,6 +47,11 @@ public class SeeOtherSchedules extends AppCompatActivity {
     }
     public void Go(View view)
     {
-        
+        //username = other_spinner.getSelectedItem().toString();
+        //Intent myintent = new Intent(this,CheckSchedule.class);
+        //Bundle mybundle = new Bundle();
+        //mybundle.putString("Busername",username);
+        //myintent.putExtras(mybundle);
+        //startActivity(myintent);
     }
 }

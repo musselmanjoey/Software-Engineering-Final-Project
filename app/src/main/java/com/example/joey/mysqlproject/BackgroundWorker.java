@@ -252,14 +252,15 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
     @Override
     protected void onPreExecute(){
             alertDialog = new AlertDialog.Builder(context).create();
-            alertDialog.setTitle("Login Status");
+            alertDialog.setTitle("Status");
 
     }
 
     @Override
     protected void onPostExecute(String result){
             if(result.equals("login success") ||result.equals("login not success")||
-                    result.equals("Username is already in use please choose another")||result.equals("new row created")) {
+                    result.equals("Username is already in use please choose another")||result.equals("new row created") ||
+                    result.equals("Schedule updated")) {
                 alertDialog.setMessage(result);
                 alertDialog.show();
             }
