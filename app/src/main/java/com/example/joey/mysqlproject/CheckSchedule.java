@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.graphics.drawable.Drawable;
 import android.graphics.PorterDuff.Mode;
@@ -1433,5 +1434,15 @@ public class CheckSchedule extends AppCompatActivity {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    public void OnOther(View view)
+    {
+        Intent myintent = new Intent(this,SeeOtherSchedules.class);
+        Bundle mybundle = new Bundle();
+
+        mybundle.putString("Busername",username);
+        myintent.putExtras(mybundle);
+        startActivity(myintent);
     }
 }

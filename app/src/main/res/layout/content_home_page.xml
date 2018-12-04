@@ -13,8 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/name_textbox"
-        android:layout_below="@+id/age_textbox"
-        android:text="TextView" />
+        android:layout_below="@+id/age_textbox" />
 
     <TextView
         android:id="@+id/name_textbox"
@@ -22,8 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/lastname_textbox"
-        android:layout_marginStart="88dp"
-        android:text="TextView" />
+        android:layout_marginStart="88dp" />
 
     <TextView
         android:id="@+id/lastname_textbox"
@@ -31,8 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="46dp"
-        android:text="TextView" />
+        android:layout_marginTop="46dp" />
 
     <TextView
         android:id="@+id/age_textbox"
@@ -40,6 +37,5 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="99dp"
-        android:text="TextView" />
+        android:layout_marginTop="99dp" />
 </RelativeLayout>

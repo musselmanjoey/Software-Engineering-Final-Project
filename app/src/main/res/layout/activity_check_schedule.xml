@@ -1346,4 +1346,22 @@
         android:layout_alignTop="@+id/textView29"
         app:srcCompat="?attr/colorError" />
 
+    <Button
+        android:id="@+id/btn_other_schd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView28"
+        android:layout_marginBottom="29dp"
+        android:onClick="OnOther"
+        android:text="See Other's" />
+
+    <TextView
+        android:id="@+id/username_for_schd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_other_schd"
+        android:layout_toEndOf="@+id/textView49"
+        android:text="Insert username for schdule" />
+
 </RelativeLayout>

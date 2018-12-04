@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -62,6 +63,20 @@ public class HomePage extends AppCompatActivity
         try {
             String res = backgroundWorker.get();
             myStringArray = res.split(" ");
+
+            final TextView nametext = findViewById(R.id.name_textbox);
+            nametext.append(myStringArray[0]);
+
+            final TextView lastnametext = findViewById(R.id.lastname_textbox);
+            lastnametext.append(myStringArray[1]);
+
+            final TextView agetext = findViewById(R.id.age_textbox);
+            agetext.append(myStringArray[2]);
+
+            final TextView usernametext = findViewById(R.id.username_textbox);
+            usernametext.append(myStringArray[3]);
+
+
 
 
 
