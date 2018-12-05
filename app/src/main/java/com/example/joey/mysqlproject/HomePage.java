@@ -17,6 +17,8 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -56,18 +58,14 @@ public class HomePage extends AppCompatActivity
 
             final TextView nametext = findViewById(R.id.name_textbox);
             nametext.append(myStringArray[0]);
-
-            final TextView lastnametext = findViewById(R.id.lastname_textbox);
-            lastnametext.append(myStringArray[1]);
+            nametext.append(" ");
+            nametext.append(myStringArray[1]);
 
             final TextView agetext = findViewById(R.id.age_textbox);
             agetext.append(myStringArray[2]);
 
             final TextView usernametext = findViewById(R.id.username_textbox);
             usernametext.append(myStringArray[3]);
-
-
-
 
 
         } catch (ExecutionException e) {

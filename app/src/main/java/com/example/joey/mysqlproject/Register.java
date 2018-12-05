@@ -43,4 +43,9 @@ public class Register extends AppCompatActivity {
         }
 
     }
+
+    public void OnSign(View view)
+    {
+        startActivity(new Intent(this,MainActivity.class));
+    }
 }

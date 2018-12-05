@@ -54,4 +54,15 @@ public class SeeOtherSchedules extends AppCompatActivity {
         myintent.putExtras(mybundle);
         startActivity(myintent);
     }
+
+
+    public void Home(View view)
+    {
+        Intent myintent = new Intent(this,HomePage.class);
+        Bundle mybundle = new Bundle();
+
+        mybundle.putString("Busername",username);
+        myintent.putExtras(mybundle);
+        startActivity(myintent);
+    }
 }

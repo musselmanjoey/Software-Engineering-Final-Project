@@ -10,6 +10,7 @@
 
     <TextView
         android:id="@+id/username_textbox"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -20,6 +21,7 @@
 
     <TextView
         android:id="@+id/name_textbox"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -28,29 +30,33 @@
         android:text="Welcome " />
 
     <TextView
-        android:id="@+id/lastname_textbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/username_textbox"
-        android:layout_below="@+id/username_textbox"
-        android:layout_marginTop="-176dp"
-        android:text="Lastname: " />
-
-    <TextView
         android:id="@+id/age_textbox"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/username_textbox"
-        android:layout_marginBottom="127dp"
+        android:layout_marginBottom="166dp"
         android:text="Age: " />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="244dp"
+        android:layout_width="262dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="135dp"
-        android:layout_toEndOf="@+id/age_textbox"
-        android:text="This is Simple Schdules, the simplest way to meet with friends" />
+        android:text="This is Simple Schedules, the simplest way to find time to meet with friends"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/username_textbox"
+        android:layout_marginBottom="226dp"
+        android:text="User Info:" />
+
 </RelativeLayout>

@@ -1431,6 +1431,7 @@ public class CheckSchedule extends AppCompatActivity {
             }
             final TextView nametext = findViewById(R.id.username_for_schd);
             nametext.append(username);
+            nametext.append("'s schedule");
 
 
         } catch (ExecutionException e) {
